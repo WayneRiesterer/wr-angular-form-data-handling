@@ -1,0 +1,20 @@
+<h1>Angular Form Data Handling</h1>
+<hr>
+
+<app-user-form (userDataSubmitted)="onUserSubmittedWithEventEmitter($event)"></app-user-form>
+
+<hr>
+
+<section>
+  <h2>Users from EventEmitter</h2>
+  <p *ngFor="let user of eventEmitterUsers">{{ user | json }}</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Users from User Service</h2>
+  <p *ngFor="let user of userServiceUsers">{{ user | json }}</p>
+</section>
+
+

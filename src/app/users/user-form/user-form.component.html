@@ -1,0 +1,19 @@
+<form [formGroup]="form">
+  <div>
+  <label>Name:</label>
+  <input formControlName="name">
+  </div>
+
+  <div>
+    <label>Age:</label>
+    <input formControlName="age">
+  </div>
+
+  <div>
+    <label>Gender:</label>
+    <input formControlName="gender">
+  </div>
+
+  <button type="button" (click)="submitWithEventEmitter()">Submit with EventEmitter</button>
+  <button type="button" (click)="submitWithService()">Submit with User Service</button>
+</form>
